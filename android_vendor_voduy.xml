@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<remote name="main" fetch="git@github.com:voduyy/android_vendor_voduy.git" />
+<project path="android_build" name="test"/>
+</manifest>
