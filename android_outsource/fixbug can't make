@@ -1,0 +1,15 @@
+ERROR: files are incompatible: The following instances are in the device manifest but not specified in framework compatibility matrix: 
+    android.hardware.media.c2@1.2::IComponentStore/ffmpeg
+    android.hardware.media.c2@1.2::IComponentStore/v4l2
+For this bug which means that devices in manifest but not specified in framework compatibility matrix of device/brcm/rpi4
+=> must define in framework_compatibility_matrix.xml 
+Declare a node for this file:
+<hal format="hidl">
+	<name>android.hardware.media.c2</name>
+	<version>1.2</version>
+	<insterface> 
+		<name>IComponentStore</name>
+		<instance>ffmpeg</instance>
+		<instance>v4l2</instance>
+	</insterface>
+</hal> 
