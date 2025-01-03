@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="github" fetch="https://github.com" />
-	<default remote="github" revision= "main" />
-	<project path="android_build" name="voduyy/android_vendor_voduy"/>
+	<remote name="github" fetch="https://github.com"/>
+	<project remote="github" path="android_build" name="voduyy/android_vendor_voduy" revision="main" />
+	<project remote="github" path="ak-mos" name="snoopy3921/Runner-game" revision="39abb2f44a8f2aeb7977492da3a0c81f37ea35ae" />
+	<project remote="github" path="linux-embedded" name="voduyy/Linux_Embedded" revision="main" />
+	<project remote="github" path="esp-rust" name="voduyy/esp_rust" revision="master" />
+	<project remote="github" path="stm32-rust" name="voduyy/stm32-rust" revision="0f8c2a492e254799f39cbcf7e603368d7a35b12b" />
 </manifest>
+
